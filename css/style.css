@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+  --primary-color: #4b997b;
+  --secondary-color: #315d50;
+  --terciary-color: #b3c476;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+/*Navbar CSS*/
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+.footernav li {
+  margin: 5px 0px;
+}
+.footernav a:hover {
+    border-bottom: 2px #fff solid;
+}
+/*Justifications*/
+.justright {
+  text-align: right;
+  justify-content: right;
+}
+.justleft {
+  text-align: left;
+  justify-content: left;
+}
+/*Items for grid columns*/
+.item1 {
+  grid-column-start: 2;
+}
+.item2 {
+  grid-column-start: 1;
+}
+/*info-1*/
+.info-1 {
+  height: 500px;
+  background: linear-gradient(var(--secondary-color), var(--terciary-color));
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: #fff;
+  position: relative;
+}
+.info-1 h1 {
+  font-size: 40px;
+}
+.info-1 p {
+  margin: 20px 0;
+}
+.info-1 .grid {
+  gap: 30px;
+  overflow: visible;
+}
+/*Info-2*/
+.info-2 {
+  height: 400px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: #333;
+  position: relative;
+}
+.info-2 h1 {
+  font-size: 40px;
+}
+.info-2 p {
+  margin: 20px 0;
+}
+.info-2 .grid {
+  gap: 30px;
+  overflow: visible;
+}
+.info-2::before,
+.info-2::after {
+  content: "";
+  position:absolute;
+  height: 100px;
+  top: -50px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+/*Info-3*/
+.info-3 {
+  height: 500px;
+  background: linear-gradient(var(--terciary-color), var(--secondary-color));
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: #fff;
+  position: relative;
+}
+.info-3 h1 {
+  font-size: 40px;
+}
+.info-3 p {
+  margin: 20px 0;
+}
+.info-3 .grid {
+  gap: 30px;
+  overflow: visible;
+}
+.info-3::before,
+.info-3::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  top: -50px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(3deg);
+  -webkit-transform: skewY(3deg);
+  -moz-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+}
+/*Work History*/
+.wh {
+  padding-top: 50px;
+}
+.wh-heading {
+  max-width: 500px;
+  margin: auto;
+}
+.wh .grid h3 {
+  font-size: 35px;
+}
+.wh .grid p {
+  font-size: 18px;
+  font-weight: bold;
+}
+/*Global Community Statement*/
+.gcs .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/*Scaling & Sizing Settings*/
+/*Tablets and Under*/
+@media (max-width: 768px) {
+  .grid,
+  .info-1 .grid,
+  .info-2 .grid,
+  .info-3 .grid,
+  .wh .grid,
+  .gcs .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .info-1-text, .info-2-text, .info-3-text {
+    text-align: center;
+  }
+  .navbar {
+      height: 100px;
+  }
+  .logo {
+    font-size: 1.15rem;
+    text-align: center;
+    padding-right: 30px;
+  }
+}
+/*Mobile*/
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .logo {
+    font-size: 2rem;
+    padding-right: 0;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
