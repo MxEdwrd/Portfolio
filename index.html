@@ -1,14 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link href=" mainstyle.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Edward's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/utilities.css" />
   </head>
-  <header></header>
   <body>
-      <div>
-        <h1 style="display: flex; justify-content: center;">This website is under construction</h1>
-        <h2 style="display: flex; justify-content: center;">M3D Designs 2021</h2>
+    <!--Navigation Bar-->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Max Edward's Portfolio.</h1>
+        <nav>
+          <ul>
+            <li><a href="Skills/skills.html">Skills</a></li>
+            <li><a href="Education/education.html">Education</a></li>
+            <li><a href="Projects/projects.html">Projects</a></li>
+          </ul>
+        </nav>
+        <ul>
+          <li><a href="features.html">Contact</a></li>
+          <li><a href="docs.html">About</a></li>
+        </ul>
       </div>
+    </div>
+    <!--Info-1-->
+    <section class="info-1">
+      <div class="container grid">
+        <div class="info-1-text justright item1">
+          <h1>Skills</h1>
+          <p>
+            Max Edward is a 3D printing and modeling guru. He has over four years of experience in the field and continues to learn more every day. Click here to find out more about Max's skills! 
+          </p>
+          <a href="Skills/skills.html" class="btnlight btn-outline-light">Read More</a>
+        </div>
+      </div>
+    </section>
+    <!--Info-2-->
+    <section class="info-2">
+      <div class="container grid">
+        <div class="info-2-text item2">
+          <h1>Education</h1>
+          <p>
+            Max Edward is enrolled in college at the University of Advancing Technologies in Tempe, Arizona. Click here to learn more about his journey to a Bachelor's Degree!
+          </p>
+          <a href="Education/education.html" class="btndark btn-outline-dark">Read More</a>
+        </div>
+      </div>
+    </section>
+    <!--Info-3-->
+    <section class="info-3">
+      <div class="container grid">
+        <div class="info-3-text justright item1">
+          <h1>Projects</h1>
+          <p>
+            Max Edward Always busy working on new projects - both for school and personal use. Click here to find out more about all his projects!
+          </p>
+          <a href="Projects/projects.html" class="btnlight btn-outline-light">Read More</a>
+        </div>
+      </div>
+    </section>
+    <section class="info-4"></section>
+    <!--Work History-->
+    <section class="wh">
+      <div class="container">
+        <h3 class="lg text-center">
+          Max's Work History
+        </h3>
+        <div class="grid grid-3 text-center my-5">
+          <div>
+            <i class="fas fa-microchip fa-3x"></i>
+            <h3>2 Years</h3>
+            <p>Sunnyslope Technologies <br> Technician</p>
+          </div>
+          <div>
+            <i class="fas fa-school fa-3x"></i>
+            <h3>3 Years</h3>
+            <p>Bennett Academy Schools <br> Assistant</p>
+          </div>
+          <div>
+            <i class="fas fa-cubes fa-3x"></i>
+            <h3>2 Years</h3>
+            <p>M3D Designs <br> CEO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Global Community Statement-->
+    <section class="gcs bg-primary py-2">
+      <div class="container grid">
+        <div class="text-center">
+          <h2 class="lg">What is my Global Community Statement?</h2>
+        </div>
+        <p class="md my-1">
+          "I hope to change the world in a positive way while also making a bright future for myself" - <i>Max Edward</i>
+        </p>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="bg-dark py-2">
+      <div class="container grid">
+        <div style="text-align: center;">
+          <h2>M3D Designs</h2>
+          <p>Copyright &copy; 2021</p>
+        </div>
+          <nav class="footernav">
+            <ul style="text-align: center;">
+              <p>Max Edward | Digital Making & Fabrication</p>
+              <li><a href="features.html">Contact</a></li>
+              <li><a href="docs.html">About</a></li>
+            </ul>
+          </nav>
+      </div>
+      <br>
+      <div class="container" style="text-align: center;">
+        <ul>
+          <li><a href="index.html" class="btnlight btn-outline-light">Back to top</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
-  <footer></footer>
 </html>
