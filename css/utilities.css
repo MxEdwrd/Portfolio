@@ -43,7 +43,9 @@
   background-color: transparent;
   border: 2px #333 solid;
 }
-.btn:hover, .btnlight:hover, .btndark:hover {
+.btn:hover,
+.btnlight:hover,
+.btndark:hover {
   transform: scale(0.98);
 }
 /*Backgrounds & Colored Buttons*/

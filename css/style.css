@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 :root {
   --primary-color: #4b997b;
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -41,6 +41,7 @@ p {
 img {
   width: 100%;
 }
+
 /*Navbar CSS*/
 .navbar {
   background-color: var(--primary-color);
@@ -65,11 +66,14 @@ img {
 .navbar .flex {
   justify-content: space-between;
 }
+.navbar .grivnav {
+  grid-template-columns: 4fr 3fr;
+}
 .footernav li {
   margin: 5px 0px;
 }
 .footernav a:hover {
-    border-bottom: 2px #fff solid;
+  border-bottom: 2px #fff solid;
 }
 /*Justifications*/
 .justright {
@@ -82,10 +86,10 @@ img {
 }
 /*Items for grid columns*/
 .item1 {
-  grid-column-start: 2;
+  grid-column-start: 1;
 }
 .item2 {
-  grid-column-start: 1;
+  grid-column-start: 2;
 }
 /*info-1*/
 .info-1 {
@@ -101,6 +105,9 @@ img {
 }
 .info-1 p {
   margin: 20px 0;
+}
+.info-1-text {
+  padding-bottom: 100px;
 }
 .info-1 .grid {
   gap: 30px;
@@ -125,10 +132,9 @@ img {
   gap: 30px;
   overflow: visible;
 }
-.info-2::before,
-.info-2::after {
+.info-2::before {
   content: "";
-  position:absolute;
+  position: absolute;
   height: 100px;
   top: -50px;
   right: 0;
@@ -154,11 +160,13 @@ img {
 .info-3 p {
   margin: 20px 0;
 }
+.info-3-text {
+  padding-top: 100px;
+}
 .info-3 .grid {
   gap: 30px;
   overflow: visible;
 }
-.info-3::before,
 .info-3::after {
   content: "";
   position: absolute;
@@ -171,6 +179,19 @@ img {
   -webkit-transform: skewY(3deg);
   -moz-transform: skewY(3deg);
   -ms-transform: skewY(3deg);
+}
+/*Card CSS*/
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  height: 130px;
+}
+.card img {
 }
 /*Work History*/
 .wh {
@@ -191,10 +212,9 @@ img {
 .gcs .grid {
   grid-template-columns: 4fr 3fr;
 }
-
 /*Scaling & Sizing Settings*/
 /*Tablets and Under*/
-@media (max-width: 768px) {
+@media (max-width: 865px) {
   .grid,
   .info-1 .grid,
   .info-2 .grid,
@@ -204,22 +224,22 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  .info-1-text, .info-2-text, .info-3-text {
+  .info-1-text,
+  .info-2-text,
+  .info-3-text {
     text-align: center;
   }
   .navbar {
-      height: 100px;
+    height: auto;
+    overflow: visible;
+  }
+  .navbar .flex {
+    flex-direction: column;
   }
   .logo {
     font-size: 1.15rem;
     text-align: center;
     padding-right: 30px;
-  }
-}
-/*Mobile*/
-@media (max-width: 500px) {
-  .navbar {
-    height: 110px;
   }
   .logo {
     font-size: 2rem;
@@ -230,6 +250,11 @@ img {
   }
   .navbar ul {
     padding: 10px;
+    margin: 10px 0px;
     background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .navbar a {
+    margin: 0;
   }
 }
