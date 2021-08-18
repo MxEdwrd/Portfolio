@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.snaketitle {
+  width: fit-content;
+  font-family: Pacifico, sans-serif;
+  font-size: 64pt;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    rgb(0, 255, 64),
+    rgb(38, 0, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: none;
+}
