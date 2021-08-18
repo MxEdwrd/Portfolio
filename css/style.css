@@ -132,7 +132,7 @@ img {
 
 /*info-1*/
 .info-1 {
-  height: 500px;
+  height: 550px;
   background: linear-gradient(var(--secondary-color), var(--terciary-color));
   background-repeat: no-repeat;
   background-attachment: scroll;
