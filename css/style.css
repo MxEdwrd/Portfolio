@@ -3,7 +3,7 @@
 :root {
   --primary-color: #4b997b;
   --secondary-color: #315d50;
-  --terciary-color: #b3c476;
+  --terciary-color: #99ac53;
   --dark-color: #333;
   --light-color: #f4f4f4;
 }
@@ -47,6 +47,9 @@ img {
   background-color: var(--primary-color);
   color: #fff;
   height: 70px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 .navbar ul {
@@ -91,6 +94,42 @@ img {
 .item2 {
   grid-column-start: 2;
 }
+/*About*/
+.about {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding-top: 100px;
+  height: 650px;
+}
+.about img {
+  width: auto;
+  height: 450px;
+  border-radius: 30px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 5px;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+.about p {
+  margin: 20px 0px;
+}
+.about-heading {
+  max-width: 500px;
+  margin: auto;
+}
+.about .grid {
+  gap: 30px;
+}
+.about .grid h3 {
+  font-size: 25px;
+}
+.about .grid p {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 /*info-1*/
 .info-1 {
   height: 500px;
@@ -194,17 +233,9 @@ img {
   width: 200px;
   height: 130px;
 }
-.cardlarge {
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: 10px;
-  width: 300px;
-  height: auto;
+.transform {
+  transform: scale(var(--scale));
 }
-
 /*Work History*/
 .wh {
   padding-top: 50px;
@@ -214,7 +245,7 @@ img {
   margin: auto;
 }
 .wh .grid h3 {
-  font-size: 35px;
+  font-size: 25px;
 }
 .wh .grid p {
   font-size: 18px;
@@ -226,7 +257,7 @@ img {
 }
 /*Scaling & Sizing Settings*/
 /*Tablets and Under*/
-@media (max-width: 1450px) {
+@media (max-width: 1550px) {
   .card {
     background-color: #fff;
     color: #333;
@@ -234,26 +265,8 @@ img {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
-    width: 150px;
-    height: 150px;
   }
 }
-@media (max-width: 1450px) {
-  .card {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
-    height: 100px;
-  }
-  .cura,
-  .simplify {
-    display: none;
-  }
-}
-
 @media (max-width: 865px) {
   .grid,
   .info-1 .grid,
